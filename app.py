@@ -6,12 +6,15 @@ import pandas as pd
 app = Flask(__name__)
 
 # Load pre-trained model
-model = joblib.load('diabetes_model.pkl')  # Ensure this file is in the same folder
+model = joblib.load('diabetes_model.pkl')  
 
 # Home route
-@app.route('/')
+@app.route('/', methods=['GET', 'POST'])
 def home():
-    return render_template('index.html')
+    if request.method == 'POST':
+        return redirect(url_for('predict'))  
+    return render_template('index.html')  #=
+
 
 # Prediction route - handles both GET and POST
 @app.route('/predict', methods=['GET', 'POST'])
