@@ -100,7 +100,7 @@ Before you begin, ensure you have the following installed:
 ---
 
 
-`![App Screenshot](https://res.cloudinary.com/dpgmbfxsz/image/upload/v1746725005/gxr0g09sgwgh96vpyas9.png)`
+![App Screenshot](https://res.cloudinary.com/dpgmbfxsz/image/upload/v1746725005/gxr0g09sgwgh96vpyas9.png)
 
 ---
 
